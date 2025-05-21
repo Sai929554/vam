@@ -2,5 +2,6 @@ Flask
 Flask_SQLAlchemy
 python-dotenv
 psycopg2-binary
-supabase
-gunicorn
+gunicorn==22.0.0
+googlemaps==4.10.0
+flask==2.3.2
