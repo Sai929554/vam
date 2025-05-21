@@ -1,3 +1,4 @@
+# main.py
 import os
 import logging
 from app import app, db
@@ -6,6 +7,11 @@ import models
 # Set up logging for debugging
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
+
+# Debug: Print directory contents
+logger.debug(f"Current working directory: {os.getcwd()}")
+logger.debug(f"Directory contents: {os.listdir('.')}")
+logger.debug(f"Services directory contents: {os.listdir('services')}")
 
 # Import routes after models to avoid circular imports
 import routes
